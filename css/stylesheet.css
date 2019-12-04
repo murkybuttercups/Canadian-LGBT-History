@@ -6,3 +6,78 @@ html,body {
 	height:100vh;
 	margin:0px;
 }
+
+img {
+	width: 100%;
+	height: auto;
+}
+.events {
+	display:grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 5fr;
+}
+
+.event__template {
+	display: grid;
+	grid-template-areas: 
+		". a a ."
+		"b b b b"
+		"b b b b"
+		"c c c c"
+		"c c c c";
+}
+
+.event--year {
+	grid-area: a;
+	font-family: 'Kranky', cursive;
+	color:white;
+	font-size: 4.5em;
+	padding-top: 900px;
+	margin:0px;
+	
+}
+
+.event--image {
+	grid-area:b;
+}
+
+.event--text {
+	grid-area: c;
+	font-family: 'Fira Sans', sans-serif;
+	color: white;
+	font-size: 1.4em;
+	padding:100px;
+}
+
+.header {
+	grid-row: 1 / span 1;
+	background-color: #3e2f89;
+}
+
+.title {
+	font-family: 'Kranky', cursive;
+	color: white;
+	font-size: 5em;
+}
+
+.event__1995 {
+	grid-row: 2 / span 1;
+	background-color: #332670;
+}
+
+.event__1981 {
+	grid-row: 3 / span 1;
+	background-color: #271d56;
+}
+
+.event__1974 {
+	grid-row: 4 / span 1;
+	background-color: #1e153f;
+}
+
+.event__1960 {
+	grid-row: 5 / span 1;
+	background-color: #0f091c;
+}
+
+
